@@ -1,0 +1,17 @@
+﻿<div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h2>Meet the contestants</h2>
+            <!--<input type="checkbox" ng-model="format" ng-click="applyFormat()" /> Apply format-->
+            <div ng-repeat="contestant in contestants">
+                <h4>{{contestant.Name}} - {{contestant.Votes}}</h4>
+                <img class="img-contestant" ng-src="{{contestant.imgUrl}}" />
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    <p>
+        <br />
+    </p>
+</div>

@@ -1,0 +1,21 @@
+body {
+	 padding: 0;
+	 font-size: 16px;
+	 line-height: 25.875px;
+	 font-family: 'HelveticaNeueETW01-55Rg';
+}
+
+div.wrapper {
+	 width: 62%;
+	 margin: 0 auto;
+	 padding: 50px 0;
+}
+
+p {
+	 margin-bottom: 25px;
+	 font-family: "Delius Swash Caps";
+	 font-weight: 400;
+	 font-style: normal;
+	 font-size: 20px;
+}
+

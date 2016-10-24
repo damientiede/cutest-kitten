@@ -1,0 +1,35 @@
+﻿<div class="container">
+    <div class="row">        
+        <div class="col-md-12 centre-text">            
+            <h2>{{roundTitle}} / Match {{Num}}</h2>
+            <h4>
+                Click on the cutest.
+            </h4>
+            <!--<p>
+                Name:{{participant.Name}}<br/>
+                City:{{participant.City}}<br/>
+                Country:{{participant.Country}}
+            </p>-->
+        </div>
+    </div>
+    <div id="row-contestants" class="row">
+        <div class="col-md-6">
+            <div class="contestant">
+                <h3 class="centre-text">{{Contest.ContestantA.Name}}</h3>
+                <img class="img-contestant" ng-src="{{Contest.ContestantA.imgUrl}}" ng-click="Winner(Contest.ContestantA)" />
+            </div>
+        </div>
+        <!--<div class="col-md-1">
+            
+        </div>-->
+        <div class="col-md-6">
+            <div class="contestant">
+                <h3 class="centre-text">{{Contest.ContestantB.Name}}</h3>
+                <img class="img-contestant" ng-src="{{Contest.ContestantB.imgUrl}}" ng-click="Winner(Contest.ContestantB)" />
+            </div>        
+        </div>
+    </div>
+</div>
+<p>
+    <br />
+</p>

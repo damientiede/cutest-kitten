@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="cuteApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/cutestkitten/" />
+    
+    <title>Cutest versus the cutest</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/cutest.css" rel="stylesheet" /> 
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 centre-text">
+                    <h1>The cutest kitten tournament</h1>
+                    <p>Which kitten will be the cutest?</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!--<div class="col-md-1"></div>-->
+            <!--<div class="col-md-10">-->
+            <div class="center-block vertical-padding">
+                <ng-view></ng-view>
+            </div>
+            <!--</div>-->
+            <!--<div class="col-md-1"></div>-->
+        </div>        
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 centre-text">
+                <a href="home">Home</a> | <a href="credits">Credits</a> | <a href="leaderboard">Leaderboard</a> | <a href="visitors">Visitors</a> | <a href="comments">Comments</a> 
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <script src="scripts/jquery-3.0.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="scripts/dateformat.min.js"></script>   
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/Controllers/HomeController.js"></script>
+    <script src="js/controllers/DetailsController.js"></script>
+    <script src="js/controllers/TournamentController.js"></script>
+    <script src="js/controllers/PodiumController.js"></script>
+    <script src="js/controllers/CreditsController.js"></script>
+    <script src="js/controllers/ContestantsController.js"></script>
+    <script src="js/controllers/SecondRoundController.js"></script>
+    <script src="js/controllers/QuarterFinalsController.js"></script>
+    <script src="js/controllers/SemiFinalsController.js"></script>
+    <script src="js/controllers/3rdPlaceFinalController.js"></script>
+    <script src="js/controllers/LeaderboardController.js"></script>
+    <script src="js/controllers/VisitorsController.js"></script>
+    <script src="js/controllers/CommentsController.js"></script>
+    <script src="js/services/TournamentService.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script>
+          WebFont.load({
+            google: {
+                families: ['Delius Swash Caps']   //'Droid Sans', 'Droid Serif',
+            }
+          });
+    </script>
+</body>
+</html>

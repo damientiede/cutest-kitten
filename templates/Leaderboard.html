@@ -1,0 +1,34 @@
+﻿<div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <a role="button" class="btn btn-default btn-info margin-top center-block" href="home">Home</a>
+        </div>
+        <div class="col-md-4">
+            <h2 class="centre-title">Leaderboard</h2>
+        </div>
+        <div class="col-md-2">
+            <a role="button" class="btn btn-default btn-info margin-top center-block" href="credits">Credits</a>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-6">
+                        
+            <div ng-repeat="contestant in leaders">
+                <table>
+                    <tr>
+                        <td style="padding-right:5px;">
+                            <img class="img-thumb" ng-src="{{contestant.ImageUrl}}" />
+                        </td>
+                        <td>
+                            <h4>{{contestant.Name}}, {{contestant.Votes}} votes.</h4>
+                        </td>
+                    </tr>
+                </table>                                
+            </div>
+        </div>
+        <!--<div class="col-md-4"></div>-->
+    </div>   
+</div>

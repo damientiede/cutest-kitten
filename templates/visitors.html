@@ -1,0 +1,39 @@
+﻿<div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <a role="button" class="btn btn-default btn-info margin-top center-block" href="home">Home</a>
+        </div>
+        <div class="col-md-4">
+            <h2 class="centre-title">Visitors</h2>
+        </div>
+        <div class="col-md-2">
+            <a role="button" class="btn btn-default btn-info margin-top center-block" href="credits">Credits</a>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-6">           
+            <table>
+                <tr ng-repeat="visitor in Visitors">
+                    <td>
+                        {{visitor.Name}}
+                    </td>
+                    <td>
+                        {{visitor.City}}
+                    </td>
+                    <td>
+                        {{visitor.Country}}
+                    </td>
+                    <td>
+                        {{formatDateShort(visitor.TimeStamp)}}
+                    </td>
+                </tr>
+            </table>           
+        </div>        
+    </div>
+    <p>
+        <br />
+    </p>
+</div>

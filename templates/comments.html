@@ -1,0 +1,29 @@
+﻿<div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <a role="button" class="btn btn-default btn-info margin-top center-block" href="home">Home</a>
+        </div>
+        <div class="col-md-4">
+            <h2 class="centre-title">Comments</h2>
+        </div>
+        <div class="col-md-2">
+            <a role="button" class="btn btn-default btn-info margin-top center-block" href="credits">Credits</a>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-6">           
+            <div ng-repeat="comment in Comments">
+                <div class="comments">
+                    <h3>{{comment.Comment}}</h3>
+                    <p>{{comment.Name}}, {{comment.City}} - {{getTimeStamp(comment)}}</p>                    
+                </div>
+            </div>                    
+        </div>       
+    </div>
+    <p>
+        <br />
+    </p>
+</div>
